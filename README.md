@@ -14,6 +14,21 @@
 
 ---
 
+## 🎯 **PROJECT ESSENTIALS**
+
+### 1. 🔍 What is the Project?
+**AeroFlow AI** is a machine learning-driven diagnostic application designed to monitor the operational health of wind turbines. It leverages historical telemetry data and neural networks to understand the baseline of a turbine operating under normal, healthy conditions.
+
+### 2. 🛠️ What is Being Made?
+* **A Deep Autoencoder Neural Network:** A TensorFlow/Keras model trained solely on healthy turbine telemetry data (Wind Speed vs. Active Power) to recognize standard operational dynamics and flag reconstruction deviations.
+* **An Interactive Streamlit HUD:** A real-time telemetry console with a dynamic sky theme, custom glassmorphism style, and an interactive windmill animation synced to wind speed inputs.
+
+### 3. 🛡️ What Problem is Being Solved?
+* **Failed & Delayed Fault Detection:** Traditional wind turbine inspections are reactive, occurring only *after* a major breakdown.
+* **High Maintenance & Operational Costs:** Undetected mechanical faults (e.g., blade degradation, gear wear) cause massive power drops, energy loss, and high repair costs. AeroFlow AI detects these performance drops early, saving an estimated **15-20%** in operational costs and preventing emergency downtime.
+
+---
+
 ## ⚡ **MAINTENANCE 3.1: THE DIGITAL Renewables REVOLUTION**
 
 In the modern **Renewable Energy 3.1** landscape, manual wind turbine inspections are costly, dangerous, and reactive. Modern wind farms require predictive telemetry analytics to catch faults before they trigger catastrophic mechanical breakdowns. 
