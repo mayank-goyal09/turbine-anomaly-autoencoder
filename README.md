@@ -1,69 +1,195 @@
-# 🌬️ Wind Turbine Health Checker (Anomaly Detection)
+<div align="center">
 
-A machine learning application that detects operational anomalies in wind turbines by monitoring real-time telemetry data. The system uses a Deep Autoencoder neural network trained with TensorFlow/Keras on historical healthy operation data to recognize when a turbine's performance deviates from normal behavior.
+# 🌬️ AeroFlow AI — Wind Turbine Intelligent Diagnostics & Anomaly Studio
 
----
+### ⚡ **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
 
-## 🎯 Project Overview
-Wind turbines are complex mechanical systems operating in harsh, variable environments. Early detection of anomalies prevents catastrophic failures and reduces maintenance costs. 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=30&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=900&height=50&lines=AeroFlow+AI+Anomaly+Studio;Deep+Autoencoder+Telemetry+Engine;Real-time+Wind+Turbine+Health;Renewable+Maintenance+3.1)](https://git.io/typing-svg)
 
-This repository implements:
-1. **Autoencoder-based Anomaly Detection**: Neural network model trained solely on healthy turbine telemetry (Wind Speed and Active Power output) to learn normal operating dynamics.
-2. **Interactive Streamlit Dashboard**: A user-friendly web interface with animations, custom styling, and sliders for real-time telemetry inputs to run diagnostics on demand.
-3. **Robust Data Preprocessing**: Standard scaling and data filtering techniques to optimize input variables.
+![Python](https://img.shields.io/badge/Python-3.8+-3776ab?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Sky_HUD-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-Autoencoder-D00000?style=for-the-badge&logo=keras&logoColor=white)
 
----
+<br/>
 
-## 📊 Telemetry Features
-- **Wind Speed (m/s)**: The velocity of wind driving the turbine.
-- **LV Active Power Out (kW)**: Actual electrical power generated.
-- **Theoretical Power Curve (kW)**: Manufacturer-specified expected power output for the given wind speed.
-- **Wind Direction (°)**: The direction of incoming wind.
+### **Where Renewable Energy Science Meets Generative Deep Learning.**
+### **Evaluate wind turbine telemetry and detect operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators.** 🌪️⚙️
+
+</div>
 
 ---
 
-## 🤖 How the AI Model Works
-An **Autoencoder** is trained to reconstruct input features (`WindSpeed` and `Power`) that match a healthy turbine profile. 
-- During inference, if the input data represents normal, healthy operation, the reconstruction error (Mean Squared Error) remains extremely low.
-- If the turbine is underperforming or behaving abnormally (e.g., due to blade damage or mechanical friction), the reconstruction error increases.
-- An anomaly is flagged when the error exceeds a calculated threshold of **`0.0806`**.
+## ⚡ **MAINTENANCE 3.1: THE DIGITAL Renewables REVOLUTION**
+
+In the modern **Renewable Energy 3.1** landscape, manual wind turbine inspections are costly, dangerous, and reactive. Modern wind farms require predictive telemetry analytics to catch faults before they trigger catastrophic mechanical breakdowns. 
+
+**AeroFlow AI** solves the high overhead of physical inspections and sensor downtime. By feeding real-time turbine metrics (Wind Speed and Active Power) into a custom-trained **Deep Autoencoder Neural Network**, it learns the boundary of optimal operation. It flags anomalies instantly when performance drifts due to blade wear, mechanical friction, yaw misalignments, or grid constraints.
 
 ---
 
-## 🚀 Getting Started
+## 📊 **WIND DIAGNOSTIC MATRIX & REGIME PRESETS**
 
-### 📋 Prerequisites
-Ensure you have the following installed:
-- Python 3.8+
-- Git
+AeroFlow AI separates turbine status into specific operational regimes, scaling the evaluation based on atmospheric conditions and power profiles:
 
-### 🔧 Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/mayank-goyal09/turbine-anomaly-autoencoder.git
-   cd turbine-anomaly-autoencoder
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install streamlit pandas numpy tensorflow scikit-learn joblib plotly nbformat
-   ```
-
-3. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
+| Operating Regime | Typical Wind Range | ML Evaluation Model | Diagnostic Indicators & Warnings |
+| :--- | :--- | :--- | :--- |
+| **Low Wind Standby** 💤 | 0.0 - 3.0 m/s | Bypassed (Normal) | Blades stationary/idling. Low output expected; ML alerts disabled. |
+| **Optimal Generation** ✨ | 3.0 - 15.0 m/s | Deep Autoencoder | Normal reconstruction error (< 0.0806). Power matches expected profile. |
+| **High Wind Load** 🌪️ | 15.0 - 25.0 m/s | Deep Autoencoder | Evaluates structural efficiency under high stress. Dynamic braking checks. |
+| **Danger Over-speed** ⚠️ | > 25.0 m/s | Bypassed (Safety Trigger) | Critical over-speed threshold. High risk of mechanical stress; emergency shutdown. |
 
 ---
 
-## 📁 File Structure
-- `app.py`: Streamlit dashboard code with modern glassmorphism styling and windmills animations.
-- `main.py` / `main.ipynb`: Model training scripts/notebook that pre-process data, build, train and export the Autoencoder.
-- `turbine_model.h5`: Trained Keras model weights.
-- `scaler.pkl`: Fitted MinMaxScaler for telemetry features.
-- `T1.csv`: Historical wind turbine telemetry dataset.
-- `.gitignore`: Configured to exclude system and temporary files.
+## ⚡ **SYSTEM ARCHITECTURE FLOW**
+
+The diagram below outlines the pipeline flow from the Streamlit interface, preprocessing layer, Autoencoder prediction, and HUD updates:
+
+```mermaid
+graph TD
+    %% Inputs
+    A[🌬️ Telemetry Inputs: Speed, Direction, Power] -->|User-defined variables| B(🖥️ Interface Console: Sky-Theme HUD)
+    
+    %% Scaling
+    B -->|Raw Metrics| C[⚖️ Preprocessing: MinMaxScaler]
+    C -->|Normalized Features| D[🧠 ML Engine: Deep Autoencoder Keras Model]
+    
+    %% Inference
+    D -->|Reconstructed Features| E{📊 Diagnostics: MSE Reconstruction Error}
+    E -->|Error > 0.0806| F[🚨 Status: Anomaly Detected]
+    E -->|Error <= 0.0806| G[✅ Status: Healthy Operation]
+    
+    %% Outputs
+    F -->|Telemetry Prognosis| H[📲 Dashboard HUD: Health Summary]
+    G -->|Telemetry Prognosis| H
+    H -->|Re-Run Diagnostics| B
+
+    %% Styles mapped to Sky Theme colors
+    style A fill:#e0f7fa,color:#006064,stroke:#00acc1,stroke-width:2px
+    style B fill:#e0f7fa,color:#006064,stroke:#00acc1,stroke-width:2px
+    style C fill:#b2ebf2,color:#006064,stroke:#00acc1,stroke-width:2px
+    style D fill:#00bfff,color:#fff,stroke:#0288d1,stroke-width:2px
+    style E fill:#0288d1,color:#fff,stroke:#0d47a1,stroke-width:2px
+    style F fill:#ff5252,color:#fff,stroke:#ff1744,stroke-width:2px
+    style G fill:#00e5ff,color:#006064,stroke:#00b8d4,stroke-width:2px
+    style H fill:#0d47a1,color:#fff,stroke:#0a357a,stroke-width:2px
+```
 
 ---
 
-Developed by **Mayank Goyal**
+## 🔬 **DEEP AUTOENCODER SPOTLIGHT**
+
+Under the hood, AeroFlow AI evaluates the correlation between wind speed and electrical power. The autoencoder learns to reconstruct input data that aligns with healthy historical performance.
+
+```python
+# Autoencoder Anomaly Scoring pipeline
+def check_turbine_health(wind_speed, actual_power):
+    # 1. Scale the incoming real-time telemetry
+    new_data = scaler.transform([[wind_speed, actual_power]])
+
+    # 2. Get reconstruction prediction
+    reconstructed = autoencoder.predict(new_data)
+    
+    # 3. Calculate Mean Squared Error (MSE) reconstruction loss
+    error = np.mean(np.power(new_data - reconstructed, 2))
+
+    # 4. Compare to statistical healthy threshold (0.0806)
+    if error > 0.0806:
+        return "🚨 ALERT: Anomaly Detected!"
+    else:
+        return "✅ Status: Healthy"
+```
+
+*During operation, mechanical issues causing decreased power production under strong wind conditions will lead to high reconstruction losses, immediately triggering alerts.*
+
+---
+
+## 🛠️ **TECHNOLOGY STACK**
+
+```
+ 🖥️ Interface  --->   Streamlit (Glassmorphic Sky-Theme HUD)
+ 🧠 ML Engine  --->   Python 3.8+ / TensorFlow / Keras (Autoencoder)
+ 📊 Scaling     --->   Scikit-Learn (MinMaxScaler / Joblib)
+ 💾 Database    --->   Local Telemetry Dataset (T1.csv)
+```
+
+* **Streamlit**: Renders the glassmorphic cloud dashboard featuring Outfit typography, dynamic SVG windmill rotation, and interactive telemetry dials.
+* **TensorFlow/Keras**: Runs the pre-trained autoencoder neural network models for real-time inference.
+* **Scikit-Learn & Joblib**: Standardizes the inputs with fitted MinMaxScaler coefficients to keep predictions accurate.
+
+---
+
+## 📂 **PROJECT BLUEPRINT**
+
+```text
+turbine-anomaly-autoencoder/
+│
+├── 📜 app.py                        # Streamlit Sky-Theme UI controller & SVG animation
+├── 📜 main.py                       # Training pipeline (autoencoder definitions & evaluation)
+├── 📜 main.ipynb                    # Development notebook for dataset exploration
+│
+├── 📊 T1.csv                        # Historical turbine telemetry dataset (50k+ records)
+├── 🤖 turbine_model.h5              # Trained Keras autoencoder model weights
+├── ⚖️ scaler.pkl                    # MinMaxScaler serialization coefficients
+│
+├── 📜 .gitignore                    # Local ignore configurations
+├── 📜 requirements.txt              # Standard package requirements
+└── 📖 README.md                     # Studio Documentation (You are here!)
+```
+
+*File Navigation Links:*
+* Dashboard Entrypoint: [app.py](file:///c:/my_local_data%28one%20drive%29/Attachments/Ambition%20course/my_all_projects/project%2070%20wind%20health%20checker/app.py)
+* Model Training Code: [main.py](file:///c:/my_local_data%28one%20drive%29/Attachments/Ambition%20course/my_all_projects/project%2070%20wind%20health%20checker/main.py)
+* Interactive Notebook: [main.ipynb](file:///c:/my_local_data%28one%20drive%29/Attachments/Ambition%20course/my_all_projects/project%2070%20wind%20health%20checker/main.ipynb)
+
+---
+
+## 🚀 **GETTING STARTED & LAUNCH GUIDE**
+
+Follow these quick steps to get the AeroFlow AI Studio running locally:
+
+### **1. Enter Directory**
+Open your terminal and navigate to the project root:
+```powershell
+cd "project 70 wind health checker"
+```
+
+### **2. Install Dependencies**
+Install all required libraries using pip:
+```powershell
+pip install streamlit pandas numpy tensorflow scikit-learn joblib plotly nbformat
+```
+
+### **3. Launch the Diagnostics Studio**
+Run the Streamlit application:
+```powershell
+streamlit run app.py
+```
+Open your browser and navigate to:
+👉 **`http://localhost:8501`**
+
+---
+
+## 👨‍🍳 **CONNECT WITH THE ENGINEER**
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-mayank--goyal09-181717?style=for-the-badge&logo=github)](https://github.com/mayank-goyal09)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank_Goyal-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mayank-goyal-4b8756363/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-00BFFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mayank-goyal09.github.io/)
+
+**Mayank Goyal**  
+🧠 GenAI & Automation Developer | 🌬️ Predictive Asset Architect | 🤖 Renewable Automation Engineer
+
+</div>
+
+---
+
+<div align="center">
+
+### **Crafted with ❤️ by Mayank Goyal**
+*"Analyze the atmosphere. Protect the future."* 🌬️⚡💻
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d47a1,100:00bfff&height=120&section=footer)
+
+</div>
