@@ -1,6 +1,6 @@
 # AeroFlow AI — Wind Turbine Intelligent Diagnostics & Anomaly Studio
 
-### 🌬️ **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
+### **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776ab?style=flat&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=flat&logo=tensorflow&logoColor=white)
@@ -10,26 +10,26 @@
 ---
 
 ### **Where Renewable Energy Science Meets Generative Deep Learning.**
-**AeroFlow AI Anomaly Studio** evaluates wind turbine telemetry and detects operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators. 🌪️⚙️
+**AeroFlow AI Anomaly Studio** evaluates wind turbine telemetry and detects operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators.
 
 ---
 
-## 🎯 **PROJECT ESSENTIALS**
+## **PROJECT ESSENTIALS**
 
-### 1. 🔍 What is the Project?
+### **1. What is the Project?**
 **AeroFlow AI** is a machine learning-driven diagnostic application designed to monitor the operational health of wind turbines. It leverages historical telemetry data and neural networks to understand the baseline of a turbine operating under normal, healthy conditions.
 
-### 2. 🛠️ What is Being Made?
+### **2. What is Being Made?**
 * **A Deep Autoencoder Neural Network:** A TensorFlow/Keras model trained solely on healthy turbine telemetry data (Wind Speed vs. Active Power) to recognize standard operational dynamics and flag reconstruction deviations.
-* **An Interactive Streamlit HUD:** A real-time telemetry console with a dynamic sky theme, custom glassmorphism style, and an interactive windmill animation synced to wind speed inputs.
+* **An Interactive Streamlit HUD:** A real-time telemetry console with a dynamic sky theme, custom glassmorphic styling, and an interactive windmill animation synced to wind speed inputs.
 
-### 3. 🛡️ What Problem is Being Solved?
-* **Failed & Delayed Fault Detection:** Traditional wind turbine inspections are reactive, occurring only *after* a major breakdown.
-* **High Maintenance & Operational Costs:** Undetected mechanical faults (e.g., blade degradation, gear wear) cause massive power drops, energy loss, and high repair costs. AeroFlow AI detects these performance drops early, saving an estimated **15-20%** in operational costs and preventing emergency downtime.
+### **3. What Problem is Being Solved?**
+* **Failed & Delayed Fault Detection:** Traditional wind turbine inspections are reactive, occurring only after a major breakdown.
+* **High Maintenance & Operational Costs:** Undetected mechanical faults (e.g., blade degradation, gear wear) cause massive power drops, energy loss, and high repair costs. AeroFlow AI detects these performance drops early, saving an estimated 15-20% in operational costs and preventing emergency downtime.
 
 ---
 
-## ⚡ **MAINTENANCE 3.1: THE DIGITAL Renewables REVOLUTION**
+## **MAINTENANCE 3.1: THE DIGITAL RENEWABLES REVOLUTION**
 
 In the modern **Renewable Energy 3.1** landscape, manual wind turbine inspections are costly, dangerous, and reactive. Modern wind farms require predictive telemetry analytics to catch faults before they trigger catastrophic mechanical breakdowns. 
 
@@ -37,39 +37,39 @@ In the modern **Renewable Energy 3.1** landscape, manual wind turbine inspection
 
 ---
 
-## 📊 **WIND DIAGNOSTIC MATRIX & REGIME PRESETS**
+## **WIND DIAGNOSTIC MATRIX & REGIME PRESETS**
 
 AeroFlow AI separates turbine status into specific operational regimes, scaling the evaluation based on atmospheric conditions and power profiles:
 
 | Operating Regime | Typical Wind Range | ML Evaluation Model | Diagnostic Indicators & Warnings |
 | :--- | :--- | :--- | :--- |
-| **Low Wind Standby** 💤 | 0.0 - 3.0 m/s | Bypassed (Normal) | Blades stationary/idling. Low output expected; ML alerts disabled. |
-| **Optimal Generation** ✨ | 3.0 - 15.0 m/s | Deep Autoencoder | Normal reconstruction error (< 0.0806). Power matches expected profile. |
-| **High Wind Load** 🌪️ | 15.0 - 25.0 m/s | Deep Autoencoder | Evaluates structural efficiency under high stress. Dynamic braking checks. |
-| **Danger Over-speed** ⚠️ | > 25.0 m/s | Bypassed (Safety Trigger) | Critical over-speed threshold. High risk of mechanical stress; emergency shutdown. |
+| **Low Wind Standby** | 0.0 - 3.0 m/s | Bypassed (Normal) | Blades stationary/idling. Low output expected; ML alerts disabled. |
+| **Optimal Generation** | 3.0 - 15.0 m/s | Deep Autoencoder | Normal reconstruction error (< 0.0806). Power matches expected profile. |
+| **High Wind Load** | 15.0 - 25.0 m/s | Deep Autoencoder | Evaluates structural efficiency under high stress. Dynamic braking checks. |
+| **Danger Over-speed** | > 25.0 m/s | Bypassed (Safety Trigger) | Critical over-speed threshold. High risk of mechanical stress; emergency shutdown. |
 
 ---
 
-## ⚡ **SYSTEM ARCHITECTURE FLOW**
+## **SYSTEM ARCHITECTURE FLOW**
 
 The diagram below outlines the pipeline flow from the Streamlit interface, preprocessing layer, Autoencoder prediction, and HUD updates:
 
 ```mermaid
 graph TD
     %% Inputs
-    A[🌬️ Telemetry Inputs: Speed, Direction, Power] -->|User-defined variables| B(🖥️ Interface Console: Sky-Theme HUD)
+    A[Telemetry Inputs: Speed, Direction, Power] -->|User-defined variables| B(Interface Console: Sky-Theme HUD)
     
     %% Scaling
-    B -->|Raw Metrics| C[⚖️ Preprocessing: MinMaxScaler]
-    C -->|Normalized Features| D[🧠 ML Engine: Deep Autoencoder Keras Model]
+    B -->|Raw Metrics| C[Preprocessing: MinMaxScaler]
+    C -->|Normalized Features| D[ML Engine: Deep Autoencoder Keras Model]
     
     %% Inference
-    D -->|Reconstructed Features| E{📊 Diagnostics: MSE Reconstruction Error}
-    E -->|Error > 0.0806| F[🚨 Status: Anomaly Detected]
-    E -->|Error <= 0.0806| G[✅ Status: Healthy Operation]
+    D -->|Reconstructed Features| E{Diagnostics: MSE Reconstruction Error}
+    E -->|Error > 0.0806| F[Status: Anomaly Detected]
+    E -->|Error <= 0.0806| G[Status: Healthy Operation]
     
     %% Outputs
-    F -->|Telemetry Prognosis| H[📲 Dashboard HUD: Health Summary]
+    F -->|Telemetry Prognosis| H[Dashboard HUD: Health Summary]
     G -->|Telemetry Prognosis| H
     H -->|Re-Run Diagnostics| B
 
@@ -86,7 +86,7 @@ graph TD
 
 ---
 
-## 🔬 **DEEP AUTOENCODER SPOTLIGHT**
+## **DEEP AUTOENCODER SPOTLIGHT**
 
 Under the hood, AeroFlow AI evaluates the correlation between wind speed and electrical power. The autoencoder learns to reconstruct input data that aligns with healthy historical performance.
 
@@ -104,22 +104,22 @@ def check_turbine_health(wind_speed, actual_power):
 
     # 4. Compare to statistical healthy threshold (0.0806)
     if error > 0.0806:
-        return "🚨 ALERT: Anomaly Detected!"
+        return "ALERT: Anomaly Detected!"
     else:
-        return "✅ Status: Healthy"
+        return "Status: Healthy"
 ```
 
 *During operation, mechanical issues causing decreased power production under strong wind conditions will lead to high reconstruction losses, immediately triggering alerts.*
 
 ---
 
-## 🛠️ **TECHNOLOGY STACK**
+## **TECHNOLOGY STACK**
 
 ```
- 🖥️ Interface  --->   Streamlit (Glassmorphic Sky-Theme HUD)
- 🧠 ML Engine  --->   Python 3.8+ / TensorFlow / Keras (Autoencoder)
- 📊 Scaling     --->   Scikit-Learn (MinMaxScaler / Joblib)
- 💾 Database    --->   Local Telemetry Dataset (T1.csv)
+ Interface  --->   Streamlit (Glassmorphic Sky-Theme HUD)
+ ML Engine  --->   Python 3.8+ / TensorFlow / Keras (Autoencoder)
+ Scaling     --->   Scikit-Learn (MinMaxScaler / Joblib)
+ Database    --->   Local Telemetry Dataset (T1.csv)
 ```
 
 * **Streamlit**: Renders the glassmorphic cloud dashboard featuring Outfit typography, dynamic SVG windmill rotation, and interactive telemetry dials.
@@ -128,22 +128,22 @@ def check_turbine_health(wind_speed, actual_power):
 
 ---
 
-## 📂 **PROJECT BLUEPRINT**
+## **PROJECT BLUEPRINT**
 
 ```text
 turbine-anomaly-autoencoder/
 │
-├── 📜 app.py                        # Streamlit Sky-Theme UI controller & SVG animation
-├── 📜 main.py                       # Training pipeline (autoencoder definitions & evaluation)
-├── 📜 main.ipynb                    # Development notebook for dataset exploration
+├── app.py                        # Streamlit Sky-Theme UI controller & SVG animation
+├── main.py                       # Training pipeline (autoencoder definitions & evaluation)
+├── main.ipynb                    # Development notebook for dataset exploration
 │
-├── 📊 T1.csv                        # Historical turbine telemetry dataset (50k+ records)
-├── 🤖 turbine_model.h5              # Trained Keras autoencoder model weights
-├── ⚖️ scaler.pkl                    # MinMaxScaler serialization coefficients
+├── T1.csv                        # Historical turbine telemetry dataset (50k+ records)
+├── turbine_model.h5              # Trained Keras autoencoder model weights
+├── scaler.pkl                    # MinMaxScaler serialization coefficients
 │
-├── 📜 .gitignore                    # Local ignore configurations
-├── 📜 requirements.txt              # Standard package requirements
-└── 📖 README.md                     # Studio Documentation (You are here!)
+├── .gitignore                    # Local ignore configurations
+├── requirements.txt              # Standard package requirements
+└── README.md                     # Studio Documentation (You are here!)
 ```
 
 *File Navigation Links:*
@@ -153,7 +153,7 @@ turbine-anomaly-autoencoder/
 
 ---
 
-## 🚀 **GETTING STARTED & LAUNCH GUIDE**
+## **GETTING STARTED & LAUNCH GUIDE**
 
 Follow these quick steps to get the AeroFlow AI Studio running locally:
 
@@ -179,7 +179,7 @@ Open your browser and navigate to:
 
 ---
 
-## 👨‍🍳 **CONNECT WITH THE ENGINEER**
+## **CONNECT WITH THE ENGINEER**
 
 <div align="center">
 
@@ -188,7 +188,7 @@ Open your browser and navigate to:
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-00BFFF?style=flat&logo=googlechrome&logoColor=white)](https://mayank-goyal09.github.io/)
 
 **Mayank Goyal**  
-🧠 GenAI & Automation Developer | 🌬️ Predictive Asset Architect | 🤖 Renewable Automation Engineer
+GenAI & Automation Developer | Predictive Asset Architect | Renewable Automation Engineer
 
 </div>
 
@@ -196,7 +196,7 @@ Open your browser and navigate to:
 
 <div align="center">
 
-### **Crafted with ❤️ by Mayank Goyal**
-*"Analyze the atmosphere. Protect the future."* 🌬️⚡💻
+### **Crafted by Mayank Goyal**
+*Analyze the atmosphere. Protect the future.*
 
 </div>
