@@ -1,22 +1,16 @@
-<div align="center">
+# AeroFlow AI — Wind Turbine Intelligent Diagnostics & Anomaly Studio
 
-# 🌬️ AeroFlow AI — Wind Turbine Intelligent Diagnostics & Anomaly Studio
+### 🌬️ **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
 
-### ⚡ **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
+![Python](https://img.shields.io/badge/Python-3.8+-3776ab?style=flat&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Sky_HUD-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-Autoencoder-D00000?style=flat&logo=keras&logoColor=white)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=30&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=900&height=50&lines=AeroFlow+AI+Anomaly+Studio;Deep+Autoencoder+Telemetry+Engine;Real-time+Wind+Turbine+Health;Renewable+Maintenance+3.1)](https://git.io/typing-svg)
-
-![Python](https://img.shields.io/badge/Python-3.8+-3776ab?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Sky_HUD-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-Autoencoder-D00000?style=for-the-badge&logo=keras&logoColor=white)
-
-<br/>
+---
 
 ### **Where Renewable Energy Science Meets Generative Deep Learning.**
-### **Evaluate wind turbine telemetry and detect operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators.** 🌪️⚙️
-
-</div>
+**AeroFlow AI Anomaly Studio** evaluates wind turbine telemetry and detects operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators. 🌪️⚙️
 
 ---
 
@@ -174,9 +168,9 @@ Open your browser and navigate to:
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-mayank--goyal09-181717?style=for-the-badge&logo=github)](https://github.com/mayank-goyal09)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank_Goyal-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mayank-goyal-4b8756363/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-00BFFF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mayank-goyal09.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-mayank--goyal09-181717?style=flat&logo=github)](https://github.com/mayank-goyal09)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank_Goyal-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/mayank-goyal-4b8756363/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_Site-00BFFF?style=flat&logo=googlechrome&logoColor=white)](https://mayank-goyal09.github.io/)
 
 **Mayank Goyal**  
 🧠 GenAI & Automation Developer | 🌬️ Predictive Asset Architect | 🤖 Renewable Automation Engineer
@@ -189,7 +183,5 @@ Open your browser and navigate to:
 
 ### **Crafted with ❤️ by Mayank Goyal**
 *"Analyze the atmosphere. Protect the future."* 🌬️⚡💻
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0d47a1,100:00bfff&height=120&section=footer)
 
 </div>
