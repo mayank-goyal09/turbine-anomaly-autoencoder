@@ -1,4 +1,4 @@
-# AeroFlow AI — Wind Turbine Intelligent Diagnostics & Anomaly Studio
+# Turbine Anomaly Autoencoder — Wind Turbine Intelligent Diagnostics & Anomaly Studio
 
 ### **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
 
@@ -10,14 +10,14 @@
 ---
 
 ### **Where Renewable Energy Science Meets Generative Deep Learning.**
-**AeroFlow AI Anomaly Studio** evaluates wind turbine telemetry and detects operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators.
+**Turbine Anomaly Autoencoder Anomaly Studio** evaluates wind turbine telemetry and detects operational failures in real time. Designed for wind farm technicians, maintenance supervisors, and asset operators.
 
 ---
 
 ## **PROJECT ESSENTIALS**
 
 ### **1. What is the Project?**
-* **Core Concept:** AeroFlow AI is a machine learning asset diagnostic application.
+* **Core Concept:** Turbine Anomaly Autoencoder is a machine learning asset diagnostic application.
 * **Baseline Modeling:** Learns normal operating behaviors from historical healthy turbine logs.
 
 ### **2. What is Being Made?**
@@ -35,7 +35,7 @@
 * **Industry Challenges:**
   * **High Overhead:** Traditional manual wind turbine inspections are dangerous and costly.
   * **Grid Underperformance:** Faults remain hidden until complete component shutdown.
-* **AeroFlow AI Action:**
+* **Turbine Anomaly Autoencoder Action:**
   * **Inference Pipeline:** Evaluates real-time wind speed and power correlations.
   * **Anomalous Drift Detection:** Instantly flags performance degradation due to blade damage, gear wear, or friction.
 
@@ -43,7 +43,7 @@
 
 ## **WIND DIAGNOSTIC MATRIX & REGIME PRESETS**
 
-AeroFlow AI separates turbine status into specific operational regimes, scaling the evaluation based on atmospheric conditions and power profiles:
+Turbine Anomaly Autoencoder separates turbine status into specific operational regimes, scaling the evaluation based on atmospheric conditions and power profiles:
 
 | Operating Regime | Typical Wind Range | ML Evaluation Model | Diagnostic Indicators & Warnings |
 | :--- | :--- | :--- | :--- |
@@ -92,7 +92,7 @@ graph TD
 
 ## **DEEP AUTOENCODER SPOTLIGHT**
 
-Under the hood, AeroFlow AI evaluates the correlation between wind speed and electrical power. The autoencoder learns to reconstruct input data that aligns with healthy historical performance.
+Under the hood, Turbine Anomaly Autoencoder evaluates the correlation between wind speed and electrical power. The autoencoder learns to reconstruct input data that aligns with healthy historical performance.
 
 ```python
 # Autoencoder Anomaly Scoring pipeline
@@ -159,7 +159,7 @@ turbine-anomaly-autoencoder/
 
 ## **GETTING STARTED & LAUNCH GUIDE**
 
-Follow these quick steps to get the AeroFlow AI Studio running locally:
+Follow these quick steps to get the Turbine Anomaly Autoencoder Studio running locally:
 
 ### **1. Enter Directory**
 Open your terminal and navigate to the project root:
