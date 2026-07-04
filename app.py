@@ -8,11 +8,31 @@ import os
 # Must be the very first Streamlit command
 st.set_page_config(page_title="Wind Turbine Health Monitor", page_icon="🌬️", layout="wide")
 
+def relu(x):
+    return np.maximum(0, x)
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-np.clip(x, -500, 500)))
+
+def predict_numpy(x, layers):
+    out = np.array(x)
+    for layer in layers:
+        w = layer['weights']
+        b = layer['biases']
+        act = layer['activation']
+        z = np.dot(out, w) + b
+        if act == 'relu':
+            out = relu(z)
+        elif act == 'sigmoid':
+            out = sigmoid(z)
+        else:
+            out = z
+    return out
+
 @st.cache_resource
 def load_models():
     try:
-        from tensorflow.keras.models import load_model
-        model = load_model('turbine_model.h5', compile=False)
+        model = joblib.load('model_weights.pkl')
         scaler = joblib.load('scaler.pkl')
         return model, scaler
     except Exception as e:
@@ -231,7 +251,7 @@ if analyze_btn:
             'Power': [active_power]
         })
         input_scaled = scaler.transform(user_input_df)
-        reconstructed = model.predict(input_scaled)
+        reconstructed = predict_numpy(input_scaled, model)
         error = np.mean(np.power(input_scaled - reconstructed, 2))
         
         # 0.0806 is the threshold from training
