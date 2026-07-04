@@ -4,7 +4,7 @@
 
 ### ⚡ **Predictive Health & Telemetry Analytics for the Renewable Energy Era**
 
-* 🔗 **Live Application:** [turbine-anomaly-autoencoder-project.streamlit.app](https://turbine-anomaly-autoencoder-project.streamlit.app/)
+🔗 **Live Application:** [turbine-anomaly-autoencoder-project.streamlit.app](https://turbine-anomaly-autoencoder-project.streamlit.app/)
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776ab?style=for-the-badge&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
